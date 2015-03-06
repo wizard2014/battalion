@@ -20,9 +20,9 @@
     /* translators: used between list items, there is a space after the comma */
     $category_list = get_the_category_list( __( ', ', 'blog-fever' ) );
 
-    if ( blog_fever_categorized_blog() ) {
-        echo '<div class="category-list">' . $category_list . '</div>';
-    }
+//    if ( blog_fever_categorized_blog() ) {
+//        echo '<div class="category-list">' . $category_list . '</div>';
+//    }
 	?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

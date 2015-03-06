@@ -8,6 +8,11 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+        <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+            <?php if ( function_exists('bcn_display') ) {
+                bcn_display();
+            } ?>
+        </div>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>

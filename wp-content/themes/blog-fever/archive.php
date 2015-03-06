@@ -68,6 +68,13 @@ get_header(); ?>
 						endif;
 					?>
 				</h1>
+
+                <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+                    <?php if ( function_exists('bcn_display') ) {
+                        bcn_display();
+                    } ?>
+                </div>
+
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();

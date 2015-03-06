@@ -52,8 +52,8 @@ function blog_fever_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'blog-fever' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . _x( 'Previous Post:', 'Previous post', 'blog-fever' ) . '</div><h1>%link</h1></div>', '%title' );
-				next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . _x( 'Next Post:', 'Next post', 'blog-fever' ) . '</div><h1>%link</h1></div>', '%title' );
+				previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . __( 'Previous Post', 'blog-fever' ) . '</div><h1>%link</h1></div>', '%title' );
+				next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . __( 'Next Post', 'blog-fever' ) . '</div><h1>%link</h1></div>', '%title' );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -84,7 +84,7 @@ function blog_fever_posted_on() {
 	);
 
 	$byline = sprintf(
-		_x( 'Written by %s', 'post author', 'blog-fever' ),
+		__( 'Written by %s', 'blog-fever' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
