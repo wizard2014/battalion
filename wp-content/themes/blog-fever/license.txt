@@ -1,0 +1,17 @@
+Blog Fever
+================================================================
+Blog Fever WordPress Theme, Copyright 2014 Yavor Georgiev Spassov.
+Blog Fever is distributed under the terms of the GNU GPL.
+
+Licenses and External Assets
+================================================================
+
+Blog Fever is distributed under the terms of the GNU GPL v2
+
+Blog Fever's code base started out as _s (http://underscores.me) as it were on September 6, 2014.
+
+The theme features 2 custom fonts - Droid Sans and Cuprum.
+
+The images used by the theme are from the searchable repository of freely usable media files located at http://upload.wikimedia.org/:
+
+Custom Header: http://upload.wikimedia.org/wikipedia/commons/6/65/Senden,_Dortmund-Ems-Kanal_--_2014_--_3001.jpg
