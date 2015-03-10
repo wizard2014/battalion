@@ -27,7 +27,7 @@
 			        echo '</span>';
 			    }
 			?>
-			<?php blog_fever_entry_footer(); ?>
+<!--			--><?php //blog_fever_entry_footer(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

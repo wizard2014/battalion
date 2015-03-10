@@ -152,7 +152,7 @@ button,
 input,
 select,
 textarea {
-	font-family: 'Droid Sans', sans-serif, serif;
+    font-family: Arial, Geneva, Helvetica, sans-serif;
 	font-size: 18px;
 	font-size: 1.8rem;
 	line-height: 1.5;
@@ -165,13 +165,12 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-weight: 900;
-	font-family: 'Cuprum', sans-serif, serif;
+    font-family: Arial, Geneva, Helvetica, sans-serif;
 	color: #000000;
-	font-size: 24px;
-	font-size: 2.4rem;
-	background: #ECECEC;
+	font-size: 18px;
+	font-size: 1.8rem;
 	padding-left: 5px;
+    background-color: #E2D7B4;
 }
 
 p {
@@ -244,30 +243,35 @@ big {
 	font-size: 125%;
 }
 
+a:focus {
+    outline: none;
+}
+
 .full{
 }
 .main-page{
 	max-width: 1200px;
 	margin: 0 auto;
+    background-color: #78783C;
 }
 
 #primary{
 	float: right;
-	width: 70%;
+	width: 75%;
 }
 #secondary{
 	float: left;
-	width: 30%;
-	padding: 30px 20px;
-	border-right: 1px solid #ECECEC;
-	box-shadow: 1px 0 5px 0 rgba(50, 50, 50, 0.75);
-	background: #B3B38C;
+	width: 25%;
+	padding: 0 20px;
+	/*border-right: 1px solid #ECECEC;*/
+	/*box-shadow: 1px 0 5px 0 rgba(50, 50, 50, 0.75);*/
+	background: #78783C;
 }
 
 .footer-area{
 	max-width: 1200px;
 	margin: 0 auto;
-	background: #BEBE9E;
+	background: #78783C;
 	padding: 30px 20px;
 	font-size: 14px;
 }
@@ -522,6 +526,10 @@ ul.nav-menu>li>a {
 	margin: 0 20px;
 }
 
+.nav-links h1 {
+    background: none;
+}
+
 @media screen and (max-width: 800px) {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
@@ -547,7 +555,6 @@ ul.nav-menu>li>a {
 	display: block;
 	float: left;
 	width: 100%;
-	font-family: 'Droid Sans', sans-serif;
     text-transform: uppercase;
     background: #2d2824;
 }
@@ -729,7 +736,6 @@ ul.nav-menu>li>a {
 	overflow: hidden;
 	font-size: 18px;
     font-size: 1.8rem;
-    font-family: 'Droid Sans', sans-serif;
 }
 
 .comment-navigation .nav-previous,
@@ -861,7 +867,6 @@ ul.nav-menu>li>a {
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 3em;
-	font-family: 'Droid Sans', sans-serif;
 	font-size: 17px;
 	font-size: 1.7rem;
 	color: #FFF8ED;
@@ -877,7 +882,6 @@ ul.nav-menu>li>a {
 }
 
 .widget a {
-	font-weight: 800;
 	color: #2d2824;
 }
 
@@ -945,6 +949,7 @@ ul.nav-menu>li>a {
 
 .byline, .entry-footer {
 	padding-left: 10px;
+    font-size: 12px;
 }
 
 .page-content,
@@ -959,31 +964,33 @@ ul.nav-menu>li>a {
 }
 
 .post {
-	background: #FFF8ED;
-	margin: 10px 20px;
+	/*background: #FFF8ED;*/
+	margin: 10px 0 10px 20px;
 	padding: 0 0 10px 0;
 }
 
 .entry-title {
-	font-size: 30px;
-	font-size: 3rem;
+	font-size: 18px;
+	font-size: 1.8rem;
 	margin: 1rem 0;
-	box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.75);
+}
+
+.entry-title a {
+    text-decoration: none;
 }
 
 .page-title, .page .entry-title{
-	font-size: 30px;
-	font-size: 3rem;
 	margin: 10px 20px;
-	background: #FFF8ED;
+	/*background: #FFF8ED;*/
 	color: #645d57;
-	font-size: 32px;
-	font-size: 3.2rem;
+	font-size: 14px;
+	font-size: 1.4rem;
 	padding: 0 10px;
 }
 
 .posted-on {
     padding-left: 10px;
+    font-size: 12px;
 }
 
 .entry-content h1, 
@@ -1026,8 +1033,8 @@ ul.nav-menu>li>a {
 .entry-content p,
 .entry-content ul,
 .entry-content ol {
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.6em;
 }
 
@@ -1137,10 +1144,7 @@ ul.nav-menu>li>a {
 }
 
 .comments-title {
-    font-weight: 800;
-    font-size: 32px;
-    font-size: 3.2rem;
-    margin-left: 20px;
+    background-color: #E2D7B4;
 }
 
 .comment-content a {
@@ -1175,7 +1179,7 @@ ul.nav-menu>li>a {
 }
 
 .comment-content { 
-	font-size: 90%; 
+	font-size: 14px;
 }
 
 .comment-content,
@@ -1210,7 +1214,7 @@ ul.nav-menu>li>a {
     position: relative;
     padding: 1em;
     margin-bottom: 2em;
-    background: #FFF8ED;
+    /*background: #FFF8ED;*/
     border-bottom: 1px solid #e3dfd2;
     font-size:110%;
     border-radius: 5px;
@@ -1228,20 +1232,14 @@ ol.children {
 
 .comment-reply-title {
     margin-bottom: .6em;
-    font-weight: 800;
-    font-size: 28px;
-    font-size: 2.8rem;
-    font-family: 'Droid Sans', sans-serif;
 }
 
 .comment-form-comment {
 	margin-right: 20px;
-	font-family: 'Droid Sans', sans-serif;
 }
 
 .comment-form {
     padding-bottom: 4rem;
-    font-family: 'Droid Sans', sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
 }
@@ -1426,7 +1424,7 @@ object {
 .header-area{
 	max-width: 1200px;
 	margin: 0 auto;
-	background: #999966;
+	background: #78783C;
 	color: #e3dfd2;
 }
 
@@ -1438,8 +1436,8 @@ object {
 
 .site-title {
     font-weight: 700;
-    font-size: 40px;
-    font-size: 4.5rem;
+    font-size: 36px;
+    font-size: 3.6rem;
     text-transform: uppercase;
     line-height: normal;
     padding-bottom: 1rem;
@@ -1503,14 +1501,6 @@ h1.site-title, h2.site-description {
 /*--------------------------------------------------------------
 14.0 Accordion menu
 --------------------------------------------------------------*/
-.dcjq-accordion {
-	font-size: 20px !important;
-}
-
-.dcjq-accordion ul a {
-	background: rgba(236,236,236,.8) !important;
-}
-
 .mobile-menu {
 	position: absolute;
 	top: 0;
@@ -1518,24 +1508,38 @@ h1.site-title, h2.site-description {
 	overflow: hidden;
 	max-width: 360px;
 	transition: left 0.5s;
+    padding-top: 10px;
+}
+
+.dcjq-accordion {
+    font-size: 12px !important;
+    border-left: 1px solid rgba(44,44,104,.9) !important;
+    border-top: 1px solid rgba(44,44,104,.9) !important;
+    border-right: 1px solid rgba(44,44,104,.9) !important;
+}
+
+.dcjq-accordion a {
+    background-color: #AD8047 !important;
+    text-shadow: none !important;
+    border-top: none !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    border-bottom: 1px solid rgba(44,44,104,.9) !important;
 }
 
 .dcjq-accordion .menu-item-has-children ul a {
-    font-size: 16px;
-    background: #E1E1BB !important;
+    font-size: 10px;
+    background-color: #E2D7B4 !important;
 }
 
 /* Sub accordion color */
 li.menu-item-has-children li.menu-item-has-children > a {
-    background: #D3D3CC !important;
+    background-color: #CEB884 !important;
 }
 
 .dcjq-accordion .menu-item-has-children li.menu-item-has-children a {
-    padding-left: 65px !important;
-}
-
-.dcjq-accordion .menu-item-has-children li.menu-item-has-children .dcjq-icon {
-    left: 28px !important;
+    padding-left: 50px !important;
+    background-position: 30px center !important;
 }
 
 .dcjq-parent {
@@ -1544,12 +1548,12 @@ li.menu-item-has-children li.menu-item-has-children > a {
 
 /* Active accordion */
 .dcjq-parent:hover, .active {
-    box-shadow: inset 3px 0 1px 0 rgba(153, 153, 102, 0.75);
+    box-shadow: inset 3px 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 .dcjq-parent.active ~ .sub-menu .active {
     color: #B20909 !important;
-    box-shadow: inset 6px 0 1px 0 rgba(153, 153, 102, 0.75);
+    box-shadow: inset 6px 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 /* Mobile menu */
