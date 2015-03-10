@@ -1543,11 +1543,12 @@ li.menu-item-has-children li.menu-item-has-children > a {
 }
 
 /* Active accordion */
-.dcjq-parent:hover, .dcjq-parent.active {
+.dcjq-parent:hover, .active {
     box-shadow: inset 3px 0 1px 0 rgba(153, 153, 102, 0.75);
 }
 
-.dcjq-parent.active ~ ul .dcjq-parent.active {
+.dcjq-parent.active ~ .sub-menu .active {
+    color: #B20909 !important;
     box-shadow: inset 6px 0 1px 0 rgba(153, 153, 102, 0.75);
 }
 
@@ -1602,6 +1603,13 @@ li.menu-item-has-children li.menu-item-has-children > a {
 
 /* Breadcrumbs */
 .breadcrumbs {
-    margin: 5px 20px;
-    padding: 5px 10px;
+    margin: 1px 20px;
+    padding: 1px 10px;
+    text-align: right;
+    font-size: 14px;
+    color: #666666;
+}
+
+.breadcrumbs a {
+    color: #666666;
 }

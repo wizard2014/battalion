@@ -17,7 +17,7 @@
 			addClass(elem, 'mobile-menu');
 			nav.style.display = 'block';
 
-            elem.style.height = originalHeight + 'px';
+            elem.style['min-height'] = originalHeight + 'px';
 		} else {
 			removeClass(elem, 'mobile-menu');
 			nav.style.display = 'none';
@@ -30,7 +30,7 @@
              *
              * right column plus breadcrumbs height
              */
-            elem.style.height = (main.offsetHeight + 52) + 'px';
+            elem.style['min-height'] = (main.offsetHeight + 52) + 'px';
 		}
 	}
 	
