@@ -149,7 +149,7 @@ function blog_fever_scripts() {
 
 	wp_enqueue_script( 'blog-fever-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20150102', true );
 	
-	wp_enqueue_script( 'accordion-mobile', get_template_directory_uri() . '/js/accordion-mobile.js', array(), '20150102', true );
+	wp_enqueue_script( 'accordion-mobile', get_template_directory_uri() . '/js/script.js', array(), '20150102', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

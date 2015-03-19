@@ -52,8 +52,8 @@ function blog_fever_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'blog-fever' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . __( 'Previous Post', 'blog-fever' ) . '</div><h1>%link</h1></div>', '%title' );
-				next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . __( 'Next Post', 'blog-fever' ) . '</div><h1>%link</h1></div>', '%title' );
+//				previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . __( 'Previous Post', 'blog-fever' ) . '</div><h1>%link</h1></div>', '%title' );
+//				next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . __( 'Next Post', 'blog-fever' ) . '</div><h1>%link</h1></div>', '%title' );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -83,12 +83,12 @@ function blog_fever_posted_on() {
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
-	$byline = sprintf(
-		__( 'Written by %s', 'blog-fever' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-	);
-
-	echo '</span><span class="byline"> ' . $byline .'.'. ' </span>' . '<span class="posted-on">' . $posted_on .'.' ;
+//	$byline = sprintf(
+//		__( 'Written by %s', 'blog-fever' ),
+//		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+//	);
+//
+//	echo '</span><span class="byline"> ' . $byline .'.'. ' </span>' . '<span class="posted-on">' . $posted_on .'.' ;
 
 }
 endif;
@@ -99,19 +99,19 @@ if ( ! function_exists( 'blog_fever_entry_footer' ) ) :
  */
 function blog_fever_entry_footer() {
 	// Hide category and tag text for pages.
-	if ( 'post' == get_post_type() ) {
-		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'blog-fever' ) );
-		if ( $categories_list && blog_fever_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'blog-fever' ) . '</span> ', $categories_list );
-		}
-
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'blog-fever' ) );
-		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'blog-fever' ) . '</span>', $tags_list );
-		}
-	}
+//	if ( 'post' == get_post_type() ) {
+//		/* translators: used between list items, there is a space after the comma */
+//		$categories_list = get_the_category_list( __( ', ', 'blog-fever' ) );
+//		if ( $categories_list && blog_fever_categorized_blog() ) {
+//			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'blog-fever' ) . '</span> ', $categories_list );
+//		}
+//
+//		/* translators: used between list items, there is a space after the comma */
+//		$tags_list = get_the_tag_list( '', __( ', ', 'blog-fever' ) );
+//		if ( $tags_list ) {
+//			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'blog-fever' ) . '</span>', $tags_list );
+//		}
+//	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
